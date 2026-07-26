@@ -1,6 +1,3 @@
-.eleventy.js (raiz do repositório)
-
-javascript
 module.exports = function (eleventyConfig) {
   // Ficheiros estáticos passados diretamente para o output
   eleventyConfig.addPassthroughCopy({ "src/css": "css" });
