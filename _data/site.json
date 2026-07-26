@@ -1,0 +1,18 @@
+{
+  "nome": "Luís · Shopify",
+  "whatsapp": "https://wa.me/351XXXXXXXXX",
+  "nav": {
+    "pt": [
+      { "label": "Início", "url": "/" },
+      { "label": "Serviços", "url": "/servicos/" },
+      { "label": "Blog", "url": "/blog/" },
+      { "label": "Sobre", "url": "/sobre/" }
+    ],
+    "en": [
+      { "label": "Home", "url": "/en/" },
+      { "label": "Services", "url": "/en/servicos/" },
+      { "label": "Blog", "url": "/en/blog/" },
+      { "label": "About", "url": "/en/sobre/" }
+    ]
+  }
+}

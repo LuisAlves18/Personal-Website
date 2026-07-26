@@ -1,0 +1,13 @@
+---
+layout: base.njk
+---
+<article class="max-w-2xl mx-auto px-6 py-12">
+  <p class="text-xs font-heading font-semibold tracking-wide text-bordeaux mb-3">
+    {{ lang == 'en' and 'BLOG' or 'BLOG' }}
+  </p>
+  <h1 class="font-heading font-semibold text-3xl text-ink mb-3">{{ title }}</h1>
+  <p class="text-sm text-ink-soft mb-8">{{ date | readableDate }}</p>
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+</article>

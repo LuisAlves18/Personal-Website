@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} · {{ site.nome }}</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="antialiased">
+
+  <header class="flex items-center justify-between px-6 py-4 bg-surface border-b border-line">
+    <a href="{{ lang == 'en' and '/en/' or '/' }}" class="font-heading font-semibold text-ink">{{ site.nome }}</a>
+    <nav class="hidden md:flex gap-6 text-sm text-ink-soft">
+      {% for item in (lang == 'en' and site.nav.en or site.nav.pt) %}
+        <a href="{{ item.url }}" class="hover:text-ink">{{ item.label }}</a>
+      {% endfor %}
+    </nav>
+    <a href="{{ site.whatsapp }}" class="bg-bordeaux text-white text-sm font-medium px-4 py-2 rounded-lg">
+      {{ lang == 'en' and 'Chat on WhatsApp' or 'Falar no WhatsApp' }}
+    </a>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer class="px-6 py-8 text-center text-sm text-ink-soft border-t border-line">
+    <p>{{ site.nome }} — {{ lang == 'en' and 'Shopify consulting for small businesses' or 'Consultoria Shopify para pequenos negócios' }}</p>
+  </footer>
+
+</body>
+</html>
