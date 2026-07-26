@@ -1,3 +1,6 @@
+.eleventy.js (raiz do repositório)
+
+javascript
 module.exports = function (eleventyConfig) {
   // Ficheiros estáticos passados diretamente para o output
   eleventyConfig.addPassthroughCopy({ "src/css": "css" });
@@ -30,6 +33,7 @@ module.exports = function (eleventyConfig) {
       data: "../_data",
       output: "_site",
     },
+    pathPrefix: "/Personal-Website/",
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
   };
